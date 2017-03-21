@@ -1,0 +1,256 @@
+[devel-root] {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #333;
+    background: #fff;
+    padding: 1em 2em;
+    text-align: left;
+}
+
+[devel-root],
+[devel-root] table {
+    font: 14px/135% "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;;
+}
+
+[devel-root] table {
+    border-collapse: collapse;
+    border: 0;
+    border-spacing: 0;
+}
+
+[devel-root] td {
+    padding: 0 6px;
+}
+
+[devel-root] a {
+    color: #0075cf !important;
+}
+
+[devel-root-item] {
+    margin: 0;
+}
+
+[devel-root-label] {
+    font-size: 180%;
+    margin: 1em 0 1em;
+}
+
+[devel-object] {
+    table-layout: fixed;
+    word-wrap: break-word;
+    width: 100%;
+    text-align: left;
+}
+
+[devel-object-item] {
+    border-bottom: 1px solid #fff;
+}
+
+[devel-object-item] > td {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+[devel-object-item]:last-child {
+    border-bottom: 0;
+}
+
+[devel-object-item]:nth-child(odd) {
+    background-color: #f4f4f4;
+}
+
+[devel-object-item]:nth-child(even) {
+    background-color: #eee;
+}
+
+[devel-object-key] {
+    width: 35%;
+    color: #666;
+}
+
+[devel-array] {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+[devel-array] > table {
+    table-layout: fixed;
+    word-wrap: break-word;
+    width: 100%;
+}
+
+[devel-array="0"] > table {
+    table-layout: auto;
+    word-wrap: normal;
+    width: auto;
+}
+
+[devel-array]:before,
+[devel-array]:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    border-color: #777;
+    border-style: solid;
+    border-width: 1px 0 1px 2px;
+    width: 4px;
+    overflow: hidden;
+}
+
+[devel-array]:after {
+    border-width: 1px 2px 1px 0;
+    left: auto;
+    right: 0;
+}
+
+[devel-array-row] {
+    border-top: 10px solid transparent;
+}
+
+[devel-array-row]:first-child {
+    border: 0;
+}
+
+[devel-array-item] {
+    position: relative;
+    word-wrap: break-word;
+}
+
+[devel-array-item]:first-child {
+    padding-left: 8px;
+}
+
+[devel-array-item]:last-child {
+    padding-right: 8px;
+}
+
+[devel-array-item]:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -1px;
+    border-right: 1px dotted #888;
+    width: 1px;
+    overflow: hidden;
+}
+
+[devel-array-item]:last-child:after {
+    display: none;
+}
+
+[devel-array-item] {
+    text-align: center;
+}
+
+[devel-value=number],
+[devel-value=ip] {
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    font-weight: bold;
+    color: #9e00b5;
+
+}
+
+[devel-value=ip] {
+    color: #0023a0;
+}
+
+[devel-value=version],
+[devel-value=boolean-true],
+[devel-value=boolean-false],
+[devel-value=null],
+[devel-value=undefined] {
+    color: #222;
+    font-size: .85em;
+    padding: 0 .4em;
+    display: inline-block;
+    border-radius: 4px;
+
+}
+
+[devel-value=boolean-false] {
+    background: #f9d3ce;
+    color: darkred;
+}
+
+[devel-value=boolean-true] {
+    background: #c2efac;
+    color: darkgreen;
+}
+
+[devel-value=null] {
+    background: #ccc;
+}
+
+[devel-value=undefined] {
+    background: #e0e0e0;
+    color: #999;
+}
+
+[devel-value=array],
+[devel-value=object] {
+    color: #777;
+}
+
+[devel-value=version] {
+    background: #F1E4B0;
+    color: #7f6129;
+}
+
+[devel-value=string] span[title^=empty]:after {
+    content: '';
+    display: inline-block;
+    border: 1px dotted #999;
+    width: .5em;
+    height: .7em;
+    vertical-align: middle;
+}
+
+[devel-root-content="proc"] [devel-array-item]:after {
+    display: none;
+}
+
+[devel-root-content="proc"] [devel-object-key] {
+    width: 65px
+}
+
+[devel-root-content="proc"] [devel-object-value] {
+    text-align: right;
+}
+
+[devel-root-content="proc"] > [devel-object] {
+    width: 20%;
+}
+
+[devel-root-item="devel-info"]:last-child {
+    border: 0;
+    margin: 3em 0 0;
+    text-align: right;
+    padding: 0;
+    opacity: .6;
+}
+
+[devel-root-item="devel-info"]:last-child [devel-root-label] {
+    font-weight: bold;
+}
+
+[devel-root-item="devel-info"]:last-child [devel-root-label]:after {
+    content: ' ';
+    display: inline;
+}
+
+[devel-root-item="devel-info"]:last-child [devel-root-label],
+[devel-root-item="devel-info"]:last-child [devel-root-content] {
+    font-size: 12px;
+    line-height: 120%;
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+

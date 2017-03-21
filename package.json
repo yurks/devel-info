@@ -1,0 +1,44 @@
+{
+  "name": "devel-info",
+  "version": "1.0.0",
+  "description": "Collect dev-related data in node.js apps (environment, cluster, process, system, request...)",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yurks/devel-info.git"
+  },
+  "keywords": [
+    "dev",
+    "devel",
+    "development",
+    "info",
+    "information",
+    "page",
+    "environment",
+    "cluster",
+    "process",
+    "system",
+    "request",
+    "package.json"
+  ],
+  "author": "Yurk Sha (http://yurks.github.io/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yurks/devel-info/issues"
+  },
+  "homepage": "https://github.com/yurks/devel-info#readme",
+  "dependencies": {
+    "cookie": "^0.3.1",
+    "humanize-duration": "^3.10.0",
+    "is_js": "^0.9.0",
+    "pretty-banner": "^1.0.0",
+    "prettysize": "0.0.3",
+    "request-ip": "^2.0.1",
+    "request-url": "git+https://github.com/yurks/request-url.git"
+  },
+  "scripts": {
+    "demo": "node ./example",
+    "demo-json": "node ./example/json",
+    "dev": "nodemon ./example server -e js,css,html,json"
+  }
+}
